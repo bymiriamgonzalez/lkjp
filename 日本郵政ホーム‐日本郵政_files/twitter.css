@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/***********************************************
+
+Twitter �E�B�W�F�b�g
+
+***********************************************/
+iframe#twitter-widget-0 {
+/*border-bottom: 1px solid #dedede !important; */
+width: 350px !important;
+height: 495px !important;
+}
+iframe#twitter-widget-1 {
+/*border-bottom: 1px solid #dedede !important; */
+}
+.timeline-Tweet-text a,
+.timeline-Tweet-text a:visited{
+text-decoration: underline;
+}
+.timeline-Header,
+.timeline-Footer {
+background-color:#cc0000;
+border-radius: 3px;
+}
+.timeline-Body{
+border: 2px solid #dedede;
+border-top: none;
+}
+.timeline-Header-title,
+.timeline-Header-byline,
+.timeline-Header-byline a,
+.timeline-Header-byline a:visited,
+.timeline-Footer a,
+.timeline-Footer a:visited {
+	font-size: 1em;
+color: white;
+}
+.timeline-Header-byline a,
+.timeline-Header-byline a:visited{
+text-decoration: underline;
+}
+.timeline-Header-byline a:hover{
+text-decoration: underline;
+}
+
+.Twitter_Head {
+background-color:#cc0000;
+padding:15px;
+margin-bottom:5px;
+border-radius: 3px;
+}
+.Twitter_Head a {
+color:#fff;
+font-weight:bold;
+font-family: 'UD新ゴ M';
+}
+
+
+@media screen and (max-width:767px) {
+iframe#twitter-widget-0{
+width: 100% !important;
+height: 240px !important;
+border-bottom: 1px solid #dedede !important;
+border-radius: 10px;
+}
+}

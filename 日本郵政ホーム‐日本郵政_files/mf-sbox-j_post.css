@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* 検索窓用css */
+.mf_finder_searchBox {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mf_finder_header li.mf_finder_searchBox_suggest_item {
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.mf_finder_header a.mf_finder_searchBox_suggest_link {
+  color: aliceblue;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mf_finder_header .mf_finder_searchBox_items {
+  padding: 0rem;
+  border: 1px solid #d6d8da;
+  width: 200px;
+  height: 30px;
+}
+
+.headerAreaInner.fixed .mf_finder_header .mf_finder_searchBox_items {
+  width: 100%;
+  min-width: 150px;
+}
+
+.mf_finder_header .mf_finder_searchBox_submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #d8d8d8;
+}
+
+.mf_finder_header .mf_finder_searchBox_submit span {
+  display: inline-block;
+  margin: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.headerAreaInner .mf_finder_header .mf_finder_searchBox_submit {
+  background-color: #fff;
+  padding: 0 .5rem;
+}
+
+.mf_finder_header .mf_finder_searchBox_submit::before {
+  margin-left: 0;
+}
+
+/* .headerAreaInner .mf_finder_header .mf_finder_searchBox_submit span {
+  margin: 0;
+} */
+
+.mf_finder_searchBox_query_input {
+  padding: 0 .5rem;
+}
+
+.mf_finder_header .mf_finder_searchBox_query_input {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: .8125rem;
+  min-height: 28px;
+  background: none;
+}
+
+.headerAreaInner.fixed .mf_finder_header .mf_finder_searchBox_query_input {
+  border: none;
+  background: #fff;
+}
+
+/* SP */
+@media screen and (max-width:767px) {
+.gnavInnerSP .searchArea .mf_finder_searchBox {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 0;
+}
+
+.gnavInnerSP .searchArea .mf_finder_header {
+  width: 100%;
+}
+
+.gnavInnerSP .searchArea .mf_finder_header .mf_finder_searchBox_items {
+  background: #fff;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+}
+
+.gnavInnerSP .searchArea .mf_finder_header .mf_finder_searchBox_query_input {
+  padding-left: 15px;
+  padding-right: 10px;
+  /* font-size: 16px; */
+  font-size: .95rem;
+}
+
+.gnavInnerSP .searchArea .mf_finder_header .mf_finder_searchBox_submit {
+  padding: 0 .5rem;
+}
+.gnavInnerSP .searchArea .mf_finder_header .mf_finder_searchBox_submit:focus {
+  -webkit-box-shadow: 0 0 0 2px #ff9000 inset;
+  box-shadow: 0 0 0 2px #ff9000 inset;
+}
+}
+
+/* 英語版css */
+html:lang(en) .mf_finder_header .mf_finder_searchBox_items {
+  width: 250px;
+}
+
+html:lang(en) .headerAreaInner.fixed .mf_finder_header .mf_finder_searchBox_items {
+  min-width: 250px;
+}
+
+html:lang(en) .gnavInnerSP .searchArea .mf_finder_header .mf_finder_searchBox_query_input {
+  font-size: .9rem;
+}
+
+/* 相対フォント用css */
+.mf_finder_searchBox_selects label:after{font-size:60%;}
+.mf_finder_searchBox_submit{font-size:105%;}
+.mf_finder_searchBox_useToggle .mf_finder_searchBox_selects .mf_finder_searchBox_toggle a:after{font-size:60%}
+.mf_finder_organic_doc_url:after,.mf_finder_organic_doc_url:before{font-size:60%;}
+.mf_finder_zubaken_title{font-size:75%;}
+.mf_finder_drilldown_reset_badge>a{font-size:75%;}
+.mf_finder_drilldown_reset_badge>a:before{font-size:95%;}
+[dir=rtl] .mf_finder_drilldown_reset_badge>a:after{font-size:95%;}
+

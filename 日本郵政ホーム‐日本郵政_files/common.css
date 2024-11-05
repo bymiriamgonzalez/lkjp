@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/***********************************************
+
+common
+
+***********************************************/
+
+#wrap {
+	font-family: 'ヒラギノUD角ゴ W3 JIS2004','メイリオ', Meiryo, 'Meiryo UI', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: #181818;
+	overflow:hidden;
+	background:#fff;
+}
+
+#wrap_underlayer {
+	overflow:hidden;
+    background:#fff;
+}
+.inner {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 50px 20px 0;
+	background-color: #fff;
+}
+.target_blank {
+	margin-left: 2px;
+}
+/* リンク　アイコン　*/
+.arrow:before {
+	content:url(../images/icon_link_01.gif);
+	line-height:13px;
+    position: relative;
+    top: 2px;
+	margin:0 5px 0 0;
+}
+.arrow a:link {
+	color:#181818;
+}
+.arrow a:visited {
+	color:#707070;
+}
+.arrow a:hover {
+	color:#cc0000;
+}
+
+/* 01. Accessibility
+-------------------------------------------------------------- */
+.Hidden { display:none; }
+
+.Show { display: block!important; }
+
+.Reader {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+img { -ms-interpolation-mode: bicubic; }
+
+.UpperCase { text-transform: uppercase; }
+
+.sup {vertical-align:text-top; font-size:.8em; }
+
+/* Print CSS
+-------------------------------------------------------------- */
+@media print {
+  body {
+      
+      width: 1200px;
+      transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      transform-origin: 0 0;
+      
+  }
+}
+
+
+/* margin
+-------------------------------------------------------------- */
+.maT25{ margin-top: 25px !important;}
+.maB0{ margin-bottom: 0 !important;}
+.maB5{ margin-bottom: 5px !important;}
+.maB10{ margin-bottom: 10px !important;}
+.maB20{ margin-bottom: 20px !important;}
+.maB30{ margin-bottom: 30px !important;}
+.maB40{ margin-bottom: 40px !important;}
+.maB50{ margin-bottom: 50px !important;}
+
+/* width
+-------------------------------------------------------------- */
+.movie_w320{ width: 320px !important; height: 180px !important;}
+.movie_w100p { width:100%; }
+.w30per {width:30%;}
+.w40per {width:40%;}
+.w60per {width:60%;}
+.w70per {width:70%;}
+
+/* font
+-------------------------------------------------------------- */
+.Text-Red {
+	color: #cc0000;
+}
+
+/* bold
+-------------------------------------------------------------- */
+strong, b { font-family: "ヒラギノUD角ゴ W6 JIS2004";; }
+
+/* disabled
+-------------------------------------------------------------- */
+a.disabled {
+	cursor: default;
+}
+a.disabled:hover {
+	opacity: 1 !important;
+	text-decoration: none;
+}
+a.Link.disabled {
+	text-decoration: underline !important;
+}
+a.Link.disabled:hover {
+	color: #181818 !important;
+	text-decoration: underline !important;
+}
+.BoxArea .Box a.disabled:hover span {
+	background: rgba(207,1,0,0.8) !important;
+}
+#LocalNavigationArea a.disabled {
+	color: #181818 !important;
+	text-decoration: none !important;
+}
+#LocalNavigationArea a.disabled:hover {
+	color: #181818 !important;
+	text-decoration: none !important;
+	background-color: #f3f3e7;
+}
+
+/* page-anchor
+-------------------------------------------------------------- */
+.page-anchor {
+	padding-top: 72px;
+}
+.page-anchor-inner {
+	padding-top: 72px;
+	margin-top: -72px;
+}
+
+/* inline
+-------------------------------------------------------------- */
+.Inline-Left {
+	display: inline-block;
+  text-align: left !important;
+}
+
+/* Text-indent
+-------------------------------------------------------------- */
+/* 1文字字下げ */
+.text_indent {
+	text-indent: 1em;
+}
+/* 行頭位置揃え（全角1文字＋半角スペース） */
+.text_indent_1em {
+	padding-left: 1.5em;
+	text-indent: -1.3em;
+}
+/* 行頭位置揃え（全角3文字） */
+.text_indent_3em {
+	padding-left: 3em;
+	text-indent: -3em;
+}
